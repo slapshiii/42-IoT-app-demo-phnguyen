@@ -12,4 +12,4 @@ spec:
     targetPort: 8888
   selector:
     app: dev
-  type: NodePort
+  type: LoadBalancer
