@@ -7,7 +7,8 @@ metadata:
   namespace: dev
 spec:
   ports:
-  - port: 8888
+  - nodePort: 32322
+    port: 8888
     protocol: TCP
     targetPort: 8888
   selector:
