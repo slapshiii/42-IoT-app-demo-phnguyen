@@ -3,7 +3,7 @@ kind: Service
 metadata:
   labels:
     app: app
-  name: app
+  name: app-service
   namespace: dev
 spec:
   ports:
@@ -12,5 +12,5 @@ spec:
     protocol: TCP
     targetPort: 8888
   selector:
-    app: dev
+    app: app
   type: NodePort
