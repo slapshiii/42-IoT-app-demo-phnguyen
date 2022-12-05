@@ -7,13 +7,12 @@ metadata:
   namespace: dev
 spec:
   ports:
-  - nodePort: 32322
-    port: 8888
-    protocol: TCP
-    targetPort: 8888
+    - port: 8888
+      targetPort: 8888
+  type: LoadBalancer
   selector:
     app: app
-  type: NodePort
+
 
 ---
 
